@@ -1,22 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+body {
+    font-family: 'Indie Flower', cursive;
+    margin: 0;
+}
 
 :root {
     --primary-color: #f5e050;
     --width-break: 600px
-
 }
+
 * {
     box-sizing: border-box;
 }
 
 
-.footer {
-    background-color: var(--primary-color);
-    padding: 2rem 1rem;
-    text-align: center;
-    color: black;
+footer{
+    /* position:fixed;
+    bottom:0; */
+    width:100%;
+    background-color:var(--primary-color);
+    text-align:center;
+    padding:1rem;
     border-top-right-radius: 1rem;
+}
+
+footer p{
+    max-width: var(--width-break); 
+    margin:auto;   
 }
 
 .navigation {
@@ -24,12 +35,17 @@
     color: black;
     padding: 1rem;
     border-bottom-left-radius: 1rem;
+    /* position: fixed; */
+    top:0;
+    display: block;
+    /* position: fixed;
+    bottom: 0px; */
 }
 
 #btn-translate {
     border: none;
     padding: 1rem 2rem;
-    margin: 1rem 0rem;
+    margin: 1rem 0rem;;
     background-color: var(--primary-color);
     font: inherit;
     font-size: large;
@@ -37,24 +53,17 @@
 
 .main {
     box-sizing: border-box;
-   
- 
-    padding: 1rem;
-
- #output{max-width: var(--width-break); 
-        margin:auto;   
-
-
-        overflow: scroll;
-    }
-
-    .imagee {
-        box-sizing: border-box;
     max-width: var(--width-break);
-    margin: auto;
     padding: 1rem;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+    margin: auto;
+}
 
-    }
+
+
+img {
+        box-sizing: border-box;  
+        margin: auto;    
+        display: block;
+        align-content: center;
+        
+}
